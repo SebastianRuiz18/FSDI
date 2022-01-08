@@ -1,0 +1,37 @@
+h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+h3{
+    background-color: rgba(161, 236, 236, 0.781);
+    font-size: 20px;
+    color: black;
+    width: 200px;
+    text-align: center;
+}
+.text{
+    line-height: 2;
+    font-size: 18px;
+    width: 80%;
+    text-transform: lowercase;
+}
+.Bio-P{
+    background-color: burlywood;
+    width: 1000px
+}
+.Bio-P2{
+    background-color: khaki;
+    width: 1000px
+}
+.Hobbie-P{
+    background-color: rgb(241, 153, 44);
+    width: 500px
+}
