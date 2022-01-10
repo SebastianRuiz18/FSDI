@@ -1,0 +1,95 @@
+/*Global*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Montserrat;
+}
+h1{
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    padding: 15px 0;
+}
+h3{
+    background-color: rgb(250, 229, 229);
+}
+p{
+    line-height: 2;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+}
+/*Utilities*/
+.bold-text{
+    font-weight: 700;
+}
+.container{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /*We can use Margin:0 auto;*/
+}
+.socials
+{
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+}
+/*Headers*/
+header{
+    background-color: bisque;
+    height: 200px;
+    width: 100%;
+}
+.header-title h1{
+    background-color: rgb(223, 156, 156);
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+.header-title h2{
+    background-color: rgb(211, 177, 177);
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.header-title p{
+    background-color: rgb(241, 212, 212);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding-bottom: 1px;
+}
+nav{
+    background-color: black;
+    text-align: center;
+    padding: 17px;
+}
+nav a{
+    color: white;
+    margin-right: 50px;
+    letter-spacing: 3px;
+}
+
+/*Main*/
+ul li{
+    font-size: 18px;
+    margin: 50px;
+}
+ol li{
+    font-size: 10px;
+    margin: 40px;
+}
+footer{
+    margin-bottom: 0;
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height: 100px;
+   width:100%;
+   background: rgb(235, 221, 221);
+}
