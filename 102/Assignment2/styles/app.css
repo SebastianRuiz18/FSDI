@@ -1,0 +1,99 @@
+/*Goblal*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/*Utilities*/
+
+/*Menu ADD CSS ANIMATION TO SUBSCRIBE ICON*/
+nav.menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.menu img.big-logo{
+    display: none;
+    width: 170px;
+}
+nav.menu img.small-logo{
+    display: block;
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+}
+nav.menu a{
+    margin-right: 30px;
+}
+a.login-link{
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+a.subscribe-link{
+    width: 125px;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    padding:20px 15px 15px 15px;
+    border: none;
+    box-shadow: inset 0 0 0 0 rgb(255, 204, 0);
+    transition: ease-out 0.2s;
+    outline: none;
+}
+a.subscribe-link:hover{
+    color: black;
+    box-shadow: inset 125px 0 0 0 rgb(255, 204, 0);
+}
+a.arrows-link{
+    color: black;
+}
+a.search-link,a.renew-link,a.menu-link{
+    display: none; 
+}
+/*Header (HW)*/
+header{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    height: 10px;
+    padding: 50px;
+    font-size: 38px;
+}
+header p{
+    height: 100px;
+    line-height: 25px;
+}
+header p span{
+    border-bottom: 2px solid rgb(255, 204, 0);
+}
+header .divider{
+    width: 30px;
+    height: 4px;
+    background: rgb(255, 204, 0);
+    margin: auto;
+    display: block;
+}
