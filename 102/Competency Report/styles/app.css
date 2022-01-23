@@ -1,0 +1,414 @@
+/*Goblal*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+:root{
+    --primary:rgb(255, 204, 0);
+}
+html{
+    font-weight: 62.5%;/*1rem=10px*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/*Utilities*/
+.read-btn{
+    color: white;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+
+/*Menu */
+nav.menu{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+nav.menu img.big-logo{
+    display: none;
+    width: 170px;
+}
+nav.menu img.small-logo{
+    display: block;
+    height: 45px;
+    padding: 10px 10px 10px 10px;
+}
+nav.menu a{
+    margin-right: 30px;
+}
+a.login-link{
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+a.subscribe-link{
+    width: 125px;
+    height: 1.4rem;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    padding:20px 15px 15px 15px;
+    border: none;
+    box-shadow: inset 0 0 0 0 rgb(255, 204, 0);
+    transition: ease-out 0.2s;
+    outline: none;
+}
+a.subscribe-link:hover{
+    color: black;
+    box-shadow: inset 125px 0 0 0 rgb(255, 204, 0);
+}
+a.arrows-link{
+    color: black;
+}
+a.search-link,a.renew-link,a.menu-link{
+    display: none; 
+}
+@media(min-width:768px){
+    .menu-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav.menu img.small-logo{
+        display: none;
+    }
+    nav.menu img.big-logo{
+        display: block;
+    }
+    a.search-link,a.renew-link,a.menu-link{
+        display: block;
+        color: black;
+        letter-spacing: 3px;
+    }
+    a.renew-link{
+        background-color: white;
+        box-shadow: var(--primary);
+        transition: ease-out 0.125s;
+        outline: none;
+        border-bottom: 3px solid rgb(255, 204, 0);
+    }
+    a.login-link:hover,a.search-link:hover,a.menu-link:hover,a.arrows-link:hover{
+        color: darkgrey;
+    }
+    a.renew-link:hover{
+        color: black;
+        box-shadow: inset  0 -20px 0 0 var(--primary);
+        cursor: pointer;
+    }
+    a.subscribe-link:hover{
+        color: black;
+        box-shadow: inset 155px 0 0 0 rgb(255, 204, 0);
+    }
+}
+/*Header (HW)*/
+header{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    height: 10px;
+    padding: 50px;
+    font-size: 38px;
+}
+header p{
+    height: 70px;
+    line-height: 25px;
+}
+header .subs{
+    background-color: black;
+    box-shadow: var(--primary);
+    transition: ease-out 0.125s;
+    outline: none;
+}
+header .subs:hover{
+    color: black;
+    box-shadow: inset  0 -20px 0 0 var(--primary);
+    cursor: pointer;
+}
+header p span{
+    border-bottom: 2px solid rgb(255, 204, 0);
+}
+header .divider{
+    width: 30px;
+    height: 4px;
+    background: rgb(255, 204, 0);
+    margin: auto;
+    margin-bottom: 25px;
+    display: block;
+}
+/*main-news*/
+.main-news{
+    position: relative;/*Parent*/
+    width: 100%;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+.main-news-img{
+    display: block;
+    margin: auto;
+    width: 98%;
+    height: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.main-news-img:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(1.1);
+}
+.main-news-text{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: white;
+}
+.main-news-text:hover{
+    cursor: pointer;
+}
+.main-news-text p.title{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.main-news-text h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin: 1rem 0;
+}
+.main-news-text h3 span{
+    font-weight: 300;
+}
+.main-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (min-width: 768px){
+    header .divider{
+        width: 4rem;
+        height: 4px;
+    }
+    .main-news-text{
+        top: 20rem;
+    }
+
+}
+/*secondary news*/
+.secondary-news{
+    width: 95%;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+.secondary-news:hover{
+    cursor: pointer;
+}
+.secondary-news-img{
+    width: 100%;
+    height: 20rem;
+    transition: 0.5s all ease-in-out;
+}
+.secondary-news-img:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(1.1);
+}
+.secondary-news-text{
+    display: block;
+    background-color: white;
+    height: 9rem;
+    padding: 1rem;
+}
+.secondary-news-text h3{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 1rem 0;
+    color: rgb(85, 85, 85);
+}
+.secondary-news-text p{
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.secondary-news-text p.read-sec{
+    color: black;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+.secondary-news-text h3 span{
+    font-weight: 300;
+}
+.secondary-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (min-width: 768px){
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .secondary-news-container{
+        display: flex;
+    }
+    .secondary-news{
+        width: 30rem;
+    }
+    .secondary-news:first-child{
+        margin-right: 1rem;
+    }
+    .secondary-news-img{
+        height: 15rem;
+    }
+    .secondary-news-img img{
+        height: 15rem;
+        width: 30rem;
+    }
+    .main-news{
+        width: 61rem;
+    }
+}
+/*Today's Picks*/
+.todays-picks-divider h2::before{
+    content: "";
+    width: 4%;
+    padding-top: 0px;
+    border-left: .4rem solid var(--primary);
+}
+.flex-container h2{
+    padding-left: .5rem;
+    margin-right: .5rem;
+    display: flex;
+    padding-bottom: 1rem;
+    padding-top: 2.5rem;
+    margin-left: .5rem;
+    text-transform: uppercase;
+}
+h2{
+    color: white;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+}
+.todays-picks{
+    padding-top: 1rem;
+}
+
+.todays-picks h4{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.todays-picks p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.todays-picks h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.todays-picks p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.todays-picks-divider{
+    text-transform: uppercase;
+    letter-spacing: 2x;
+    margin: 5rem 0 3rem 1rem;
+    font-weight: 700;
+}
+.todays-picks-divider h2{
+    padding-left: 1rem;
+}
+.flex-item{
+    color: white;
+}
+.flex-container h4{
+    font-size: .8rem;
+    color: white;
+    padding-top: 0rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.flex-container h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.flex-container p{
+    padding: 1rem 0;
+}
+.flex-container p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.pick{
+   padding-top: 1rem;
+}
+.todays-picks .flex-item{
+    display: flex;
+    margin-bottom: 20px;
+}
+.todays-picks .flex-item img{
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    object-position: 30% 10%;
+    border: 5px solid black;
+    padding-left: 18px;
+    padding-right: 1rem;
+}
+.todays-picks .flex-item img:hover{
+    cursor: pointer;
+}
+/* See more divider/link */
+.see-more{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    box-shadow: var(--primary);
+    transition: ease-out 0.125s;
+    outline: none;
+    background-color: black;
+    border-bottom: 3px solid rgb(255, 204, 0);
+    display: table;
+    margin: 0 auto;
+}
+.see-more:hover{
+    color: black;
+    box-shadow: inset  0 -20px 0 0 var(--primary);
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .see-more{
+        display: table;
+        margin: 0 auto;
+    }
+}
