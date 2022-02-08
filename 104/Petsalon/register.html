@@ -11,13 +11,48 @@
     
     <!-- Create a Form with the following inputs
     name, gender, breed, sevice, owner, contact -->
-
-        
-        <div id="salonInformation">
-
+        <div class="input-container">
+            <h2>Register a new Pet</h2>
+            <div class="form-control">
+                <input type="text" id="txtName" placeholder="Enter pet name">
+             </div>
+            <div class="form-control">
+                <input type="number" id="txtAge" placeholder="Enter the age">
+            </div>
+            <div>
+                <select id="selGender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="txtBreed" placeholder="Enter the breed">
+            </div>
+            <div>
+                <select id="selService">
+                    <option value="nails cut">Nails Cut</option>
+                    <option value="shower">Shower</option>
+                    <option value="grooming">Grooming</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="txtOwner" placeholder="Enter the owner">
+            </div>
+            <div>
+                <input type="text" id="txtContact" placeholder="Enter the contact">
+            </div>
+            <button onclick="register(), ClearFields()" id="regButton">Register</button>
         </div>
+
+        <div id="petList"class="pets">
+            <!-- Display the Pets in HERE!!! -->
+        </div>
+
+        <div id="salonInformation">
+            
+        </div>
+
         <script src="scripts/register.js"></script>
         <script src="scripts/displayinfo.js"></script>
 </body>
 </html>
-
