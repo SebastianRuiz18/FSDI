@@ -1,0 +1,53 @@
+
+h1{
+    color:steelblue;
+    flex: 90%;
+    font-size: 45px;
+    background: -webkit-linear-gradient(rgb(223, 32, 121), rgb(8, 32, 53));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav{
+    display: flex;
+    border: solid 1px pink;
+}
+body{
+    background-image: url("/img/backround.jpg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+    color: antiquewhite;
+}
+main{
+    display: flex;
+}
+
+#list{
+    flex: 3;
+}
+#form{
+    flex: 2;
+}
+
+#iImportant{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+#iImportant.fas{
+    color: gold;
+}
+#btnToggleForm {
+    color: white;
+    font-size: 20px;
+    flex: 10%;
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, pink 0, steelblue 100%);
+    width: 100px;
+}
+section{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
